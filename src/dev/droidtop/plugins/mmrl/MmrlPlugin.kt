@@ -20,13 +20,13 @@ import org.json.JSONObject
  * or APatch modules on this device, switched, removed, checked for updates and installed from a link. droidtop has
  * no business rendering a module's own WebUI or a repo browser (the plan's scope note).
  *
- * Facets only (Droidtop/droidtop docs/plugin-api.md 1.10, "Facets first"; Droidtop/tracker#602): droidtop draws the
+ * Facets only (mytop-project/droidtop docs/plugin-api.md 1.10, "Facets first"; mytop-project/tracker#602): droidtop draws the
  * settings page, the Quick Menu entry and the status line from [ModuleFacets], and their actions come back here as
  * `ui.facets` calls and jobs. The contract 1 status tile and settings rows are gone: droidtop showed the module list
  * as one row of raw JSON, and nothing in it could start the enable, remove, update and install jobs.
  *
  * Root comes only through droidtop's enhanced privileges provider: the manifest requires `priv.shell` at level root
- * and asks for `priv.shell.root`, which the person allows or not on the approval screen (Droidtop/tracker#892).
+ * and asks for `priv.shell.root`, which the person allows or not on the approval screen (mytop-project/tracker#892).
  * Without it, or on a device with no root-module provider at all, everything here answers cleanly (never throws,
  * never a hard failure): a device with nothing to manage is the ordinary case, not an error.
  */

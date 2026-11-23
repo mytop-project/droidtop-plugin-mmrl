@@ -4,8 +4,8 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 /**
- * What droidtop draws for this plugin, as facets (Droidtop/droidtop docs/plugin-api.md 1.10, "Facets first";
- * Droidtop/tracker#602): the plugin draws nothing. Its settings page is the provider, Check for updates, Install a
+ * What droidtop draws for this plugin, as facets (mytop-project/droidtop docs/plugin-api.md 1.10, "Facets first";
+ * mytop-project/tracker#602): the plugin draws nothing. Its settings page is the provider, Check for updates, Install a
  * module from a link, and one group per module with its On switch and Remove; the Quick Menu shows one status
  * line. Pure: the module list and the ids with updates come in, JSON goes out.
  */

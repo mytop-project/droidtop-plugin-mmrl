@@ -7,7 +7,7 @@ package dev.droidtop.plugins.mmrl
  * `module.prop` fields and `disable`/`remove`/`update` marker-file
  * semantics every Magisk-module-compatible provider (Magisk, KernelSU,
  * APatch) already shares, run here through droidtop's enhanced privileges
- * provider ([PrivilegedShell], Droidtop/tracker#892) instead of MMRL's own
+ * provider ([PrivilegedShell], mytop-project/tracker#892) instead of MMRL's own
  * bound root service, since a droidtop plugin has no manifest component of
  * its own to bind that to (see this repo's PLUGIN-PLAN.md).
  *

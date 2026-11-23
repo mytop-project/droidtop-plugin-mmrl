@@ -8,7 +8,7 @@ Plugins screen like any other plugin bundle.
 
 - `src/` -- five files:
   - `PrivilegedShell.kt` -- every root command, through droidtop's enhanced
-    privileges provider (`priv.shell` at level root, Droidtop/tracker#892),
+    privileges provider (`priv.shell` at level root, mytop-project/tracker#892),
     as an argument list the provider starts with no shell; never `su` from
     this plugin's own process. A module install runs as a stream session
     (`exec_stream`), since it can outlast a quick call.
@@ -37,7 +37,7 @@ Plugins screen like any other plugin bundle.
   droidtop's public repo pins only that one origin.
 - `build.sh` / `sign.sh` / `.github/workflows/plugin-bundle.yml` -- same
   split and CI shape as `droidtop-plugin-shizuku`: CI builds the payload
-  against a `Droidtop/droidtop` checkout's `:plugin-host`, then signs it with
+  against a `mytop-project/droidtop` checkout's `:plugin-host`, then signs it with
   `sign.sh` using the `PLUGIN_SIGNING_KEY` repo secret (optional `PLUGIN_SIGNING_CERT`
   becomes `origin.cert`); without the secret it uploads unsigned. A `plugin-v*` tag
   attaches the signed bundle to a release. Locally, `sign.sh` runs on droidtop-dev.
@@ -45,7 +45,7 @@ Plugins screen like any other plugin bundle.
 To produce an installable bundle: download the `plugin-bundle` CI
 artifact's `build/manifest.json` + `build/classes.jar` (or run
 `build.sh` locally against a `:plugin-host:assembleDebug` classpath from
-a `Droidtop/droidtop` checkout), then run
+a `mytop-project/droidtop` checkout), then run
 `PLUGIN_SIGNING_KEY=/root/coordination/keys/droidtop-plugins/droidtop-origin-private.pem ./sign.sh`.
 
 ## Signing

@@ -5,7 +5,7 @@
   "description": "Lists your Magisk, KernelSU or APatch modules, turns them on and off, checks them for updates and installs new ones. On a device without root it stays out of the way.",
   "summary": "Your Magisk, KernelSU or APatch modules: switch, update and install them",
   "publisher": "droidtop",
-  "homepage": "https://github.com/Droidtop/droidtop-plugin-mmrl",
+  "homepage": "https://github.com/mytop-project/droidtop-plugin-mmrl",
   "version": "1.2.0",
   "kind": "native_bundle",
   "provides": [

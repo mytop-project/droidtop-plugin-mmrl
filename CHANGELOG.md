@@ -8,17 +8,17 @@ under Unreleased.
 
 ## [Unreleased]
 
-- Plugin 1.2.0: root only through droidtop's enhanced privileges provider (Droidtop/tracker#892). The plugin ran `su` itself for every module action, and declared contract 3 with no permissions, so droidtop's approval screen never offered the root tick and nothing but the root manager's prompt stood in the way. It now requires `priv.shell` at level root and asks for `priv.shell.root`, a choice the person makes and can take back. Every command is an argument list the provider starts with no shell, and a module id is used only in the shape Magisk requires, so a crafted folder under /data/adb/modules can no longer run commands. An install runs as a stream session, since it can outlast a quick call.
-- Plugin 1.1.0: facets only (contract 3, docs/plugin-api.md 1.10 "Facets first", Droidtop/tracker#602). Its settings page lists each module with an On switch and Remove, Check for updates and Install a module from a link, and its Quick Menu entry shows the provider and counts. The contract 1 status tile and settings rows are gone: droidtop showed the module list as one row of raw JSON, and none of the module actions could be started.
-- Its page shows a one-line summary, droidtop as its maker and its own page, from the manifest's `summary`, `publisher` and `homepage` (docs/plugin-api.md 1.2 "Presentation", Droidtop/tracker#521).
-- Its catalog description says what it does for you, without the build's terms (Droidtop/tracker#514).
-- Names its kind for droidtop's Plugins page (`category`: system, docs/plugin-api.md 1.2, Droidtop/tracker#179).
+- Plugin 1.2.0: root only through droidtop's enhanced privileges provider (mytop-project/tracker#892). The plugin ran `su` itself for every module action, and declared contract 3 with no permissions, so droidtop's approval screen never offered the root tick and nothing but the root manager's prompt stood in the way. It now requires `priv.shell` at level root and asks for `priv.shell.root`, a choice the person makes and can take back. Every command is an argument list the provider starts with no shell, and a module id is used only in the shape Magisk requires, so a crafted folder under /data/adb/modules can no longer run commands. An install runs as a stream session, since it can outlast a quick call.
+- Plugin 1.1.0: facets only (contract 3, docs/plugin-api.md 1.10 "Facets first", mytop-project/tracker#602). Its settings page lists each module with an On switch and Remove, Check for updates and Install a module from a link, and its Quick Menu entry shows the provider and counts. The contract 1 status tile and settings rows are gone: droidtop showed the module list as one row of raw JSON, and none of the module actions could be started.
+- Its page shows a one-line summary, droidtop as its maker and its own page, from the manifest's `summary`, `publisher` and `homepage` (docs/plugin-api.md 1.2 "Presentation", mytop-project/tracker#521).
+- Its catalog description says what it does for you, without the build's terms (mytop-project/tracker#514).
+- Names its kind for droidtop's Plugins page (`category`: system, docs/plugin-api.md 1.2, mytop-project/tracker#179).
 
 ### Added
 
 - The droidtop plugin: a root-module status tile and settings rows (2026-09-26), the plugin plan and its rewrite so plugins run in droidtop's own context (2026-09-25), the licence note and the daily upstream sync (2026-09-25).
-- The plugin bundle workflow signs the bundle itself (2026-10-07), now through the shared workflow in `Droidtop/droidtop-platforms`; every signed push publishes a pre-release.
-- A commit-hygiene check and the upstream sync, both called from `Droidtop/droidtop-platforms`.
+- The plugin bundle workflow signs the bundle itself (2026-10-07), now through the shared workflow in `mytop-project/droidtop-platforms`; every signed push publishes a pre-release.
+- A commit-hygiene check and the upstream sync, both called from `mytop-project/droidtop-platforms`.
 
 ### Changed
 

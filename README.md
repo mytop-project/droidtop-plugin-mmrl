@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Droidtop/droidtop-plugin-mmrl/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Droidtop/droidtop-plugin-mmrl?label=release&include_prereleases&style=flat-square"></a>
-  <a href="https://github.com/Droidtop/droidtop-plugin-mmrl/actions/workflows/plugin-bundle.yml"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Droidtop/droidtop-plugin-mmrl/plugin-bundle.yml?branch=main&label=build&style=flat-square"></a>
+  <a href="https://github.com/mytop-project/droidtop-plugin-mmrl/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/mytop-project/droidtop-plugin-mmrl?label=release&include_prereleases&style=flat-square"></a>
+  <a href="https://github.com/mytop-project/droidtop-plugin-mmrl/actions/workflows/plugin-bundle.yml"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/mytop-project/droidtop-plugin-mmrl/plugin-bundle.yml?branch=main&label=build&style=flat-square"></a>
   <img alt="For droidtop" src="https://img.shields.io/badge/for-droidtop-2f7bf5?style=flat-square">
   <a href="LICENSE"><img alt="License: GPL-3.0" src="https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square"></a>
 </p>
@@ -24,7 +24,7 @@
   <a href="#upstream-readme">Upstream README</a>
 </p>
 
-This is a fork of [MMRL](https://github.com/MMRLApp/MMRL) with a [droidtop](https://github.com/Droidtop/droidtop) plugin added beside it: `src/`, `build.sh`, `sign.sh` and `manifest.template.json` (how they build: `PLUGIN-BUILD.md`). The plugin ports MMRL's module handling and leaves out MMRL's own screens.
+This is a fork of [MMRL](https://github.com/MMRLApp/MMRL) with a [droidtop](https://github.com/mytop-project/droidtop) plugin added beside it: `src/`, `build.sh`, `sign.sh` and `manifest.template.json` (how they build: `PLUGIN-BUILD.md`). The plugin ports MMRL's module handling and leaves out MMRL's own screens.
 
 ## What the droidtop plugin does
 
@@ -36,7 +36,7 @@ It needs root, because managing root modules is its whole purpose. Nothing else 
 
 ## Install
 
-You need [droidtop](https://github.com/Droidtop/droidtop). You need a device that already has Magisk, KernelSU or APatch.
+You need [droidtop](https://github.com/mytop-project/droidtop). You need a device that already has Magisk, KernelSU or APatch.
 
 1. In droidtop open **Settings > Plugins > Add**. droidtop's own catalog is always there.
 2. Pick **Root modules** and press **Install**.
@@ -162,6 +162,6 @@ needed. That's our standard operation." This repository is a fork, so it has thr
   that moves the line's pin on `plugin-core`.
 - **`plugin/stable`** is the release branch: the upstream commit `plugin-core` pins, with `plugin-core` written over
   it. It is generated, never edited: `python3 tools/plugin_line.py compose stable --commit` from
-  Droidtop/droidtop-platforms. `.github/workflows/plugin-line.yml` fails when it differs from that composition.
+  mytop-project/droidtop-platforms. `.github/workflows/plugin-line.yml` fails when it differs from that composition.
 
 There is no `main` or `master`.

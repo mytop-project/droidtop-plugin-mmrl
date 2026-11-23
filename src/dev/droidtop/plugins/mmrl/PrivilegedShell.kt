@@ -7,8 +7,8 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 /**
- * Root commands through droidtop's enhanced privileges provider (`priv.shell` at level root, Droidtop/droidtop
- * docs/plugin-api.md 2.4 and 2.7), never `su` from this plugin's own process (Droidtop/tracker#892). droidtop's broker
+ * Root commands through droidtop's enhanced privileges provider (`priv.shell` at level root, mytop-project/droidtop
+ * docs/plugin-api.md 2.4 and 2.7), never `su` from this plugin's own process (mytop-project/tracker#892). droidtop's broker
  * checks this plugin's `priv.shell.root` grant on every call, so the person's choice on the approval screen is the
  * gate, and turning it off stops every command here.
  *

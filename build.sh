@@ -2,7 +2,7 @@
 # Compiles, dexes and hashes droidtop.mmrl-modules's payload (five
 # source files: PrivilegedShell.kt, RootProvider.kt, ModuleManager.kt,
 # ModuleFacets.kt, MmrlPlugin.kt) in the exact shape PluginBundleInstaller.install()
-# expects (Droidtop/droidtop docs/SPEC.md 12a). Same build.sh shape as
+# expects (mytop-project/droidtop docs/SPEC.md 12a). Same build.sh shape as
 # droidtop's own samples/plugin-sample-statustile and this project's
 # droidtop-plugin-shizuku sibling.
 #
@@ -11,11 +11,11 @@
 # PLUGIN_SIGNING_KEY repo secret, droidtop-dev runs it locally with the origin key.
 #
 # Prerequisites:
-#   - kotlinc on PATH (matching Droidtop/droidtop's gradle/libs.versions.toml
+#   - kotlinc on PATH (matching mytop-project/droidtop's gradle/libs.versions.toml
 #     "kotlin" entry)
 #   - d8 on PATH (Android SDK build-tools)
 #   - PLUGIN_HOST_CLASSPATH pointing at a compiled :plugin-host classes.jar
-#     (from a Droidtop/droidtop checkout, e.g. its plugin-host-debug.aar's
+#     (from a mytop-project/droidtop checkout, e.g. its plugin-host-debug.aar's
 #     classes.jar)
 #   - ANDROID_JAR pointing at android.jar for :plugin-host's compileSdk
 #
